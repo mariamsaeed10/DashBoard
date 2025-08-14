@@ -1,0 +1,190 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #f4f0f0;
+    font-family:  sans-serif;
+}
+body{
+    background-color: #f4f0f0;
+    display: flex;
+}
+.imgg{
+     
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+   border-radius:40%;
+   border: 2px solid rgb(167, 135, 197);
+   flex-shrink: 0;
+}
+.imgg img{
+   width: 100%;
+   
+}
+.pro h2{
+    font-size: 15px;
+}
+.pro h2:hover{
+  color: rgb(167, 135, 197);
+}
+.pro{
+  display: flex;
+  align-items: center;
+  gap:20px ;
+}
+
+.menu{
+    height: 100vh;
+    width: 40px;
+    background-color: rgb(198, 177, 216);
+    padding: 20px;
+    overflow: hidden;
+}
+.menu:hover{
+    width: 250px;
+    transition: .5s;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+ul li a:hover{
+    background-color: rgb(167, 135, 197);
+    color: #edd7ed;
+    ul li a i:hover{
+    color:rgb(240, 238, 242) ;
+}
+}
+
+ul li a i{
+    color:rgb(190, 153, 223) ;
+    font-size: 30px;
+}
+/* 
+.sbb{
+    background-color: white;
+    width: 100%;
+    height: 50%;
+    padding:30px;
+    border:solid 1px rgb(190, 153, 223) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 0;
+}
+.sbb input{
+    border-radius: 10px;
+    width: 75%;
+    padding: 0px ;
+    margin: 0px;
+    border: solid 1px rgb(190, 153, 223) ;
+    color: rgb(110, 75, 139) ;
+    
+}
+.sbb input:hover{
+    border: solid 2px rgb(198, 177, 216);
+    background-color: rgb(215, 196, 234);
+}
+.sbb input:focus{ border: none;}
+.sbb i{
+   
+    color: rgb(190, 153, 223) ;
+}
+.yy{
+    width: 100%;
+    height: 50%;
+    
+}
+.yy input{
+   height: 25%;
+}
+/* 
+.pb{
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+  
+    display: flex;
+   
+    justify-content: space-between;
+} */ */
+
+.head {
+  background-color: rgb(243, 239, 239);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ padding: 5px 8px;
+  box-sizing: border-box;
+  margin: 0;      
+  
+}
+
+tr {
+  padding: 0; 
+  height: 10%;
+}
+
+.head i {
+  color: rgb(190, 153, 223);
+  font-size: 18px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.head input {
+  color: rgb(166, 113, 212);
+  border: solid rgb(190, 153, 223) 1px;
+  outline: none;
+  padding: 5px 10px;
+  width: 70%;
+  border-radius: 5px;
+  padding-top: none;
+}
+button{
+    color: white;
+    background-color: rgb(190, 153, 223);
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+button:hover{
+    color: rgb(91, 4, 87);
+    background-color: rgb(231, 221, 240);
+}
+
+.kj {
+  color: white;
+  background-color: rgb(190, 153, 223); /* اللون الأساسي */
+  width: 100%;
+  height: 100%;
+  margin-left: 5px;
+  padding: 10px;
+  position: relative; /* مهم علشان نضيف الجزء الجانبي */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ✅ شادو */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* ✅ الجزء الجانبي بلون أغمق */
+.kj::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px; /* عرض الشريط الجانبي */
+  height: 100%;
+  background-color: rgb(144, 104, 192); /* لون أغمق */
+}
